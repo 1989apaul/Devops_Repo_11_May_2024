@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+    - name: start webserver in readhat node
+      service:
+        name: httpd
+        state: started
